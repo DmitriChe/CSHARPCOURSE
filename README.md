@@ -1,0 +1,1 @@
+Вывод квадрата числа -> [Блок-схема](Seminar01/Ex01/diagram.drawio.png)[КОД](Seminar01/Ex01/Program.cs)
