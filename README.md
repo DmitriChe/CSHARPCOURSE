@@ -1,1 +1,2 @@
 Вывод квадрата числа -> [Блок-схема](Seminar01/Ex01/diagram.drawio.png)[КОД](Seminar01/Ex01/Program.cs)
+Максимум из трез чисел (ДЗ-1) -> [Блок-схема](Homework01/Ex01/diagram.drawio.png)[КОД](Homework01/Ex01/Program.cs)
