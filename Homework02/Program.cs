@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// HOMEWORK02
+Homework02.Task10();
+Homework02.Task13();
+Homework02.Task15();
+
