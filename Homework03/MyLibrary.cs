@@ -27,4 +27,9 @@ public static class MyLibrary
         }
         Console.WriteLine(result);
     }
+
+    public static void PrintDistance(int x1, int y1, int x2, int y2)
+    {
+        Console.WriteLine($"Расстояние: {Math.Sqrt(Math.Pow(Math.Abs(x1 - x2), 2) + Math.Pow(Math.Abs(y1 - y2), 2))}");
+    }
 }
