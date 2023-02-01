@@ -8,4 +8,12 @@ public static class Homework04
         int power = GetNumber();
         Console.WriteLine($"Число {number} в степени {power} равно {MyPow(number, power)}");
     }
+
+    public static void Task27()
+    {
+        Console.WriteLine($"Сумма цифр числа: {DigitSum(GetNumber())}");
+    }
+
+
 }
+
