@@ -65,13 +65,14 @@
     /// <returns>Строка значений элементов массива</returns>
     public static string PrintArray(int[] arr)
     {
-        string stringArr = String.Empty;
-        for (int i = 0; i < arr.Length; i++)
-        {
-            // Console.Write($"{arr[i]} ");
-            stringArr += $"{arr[i]} ";
-        }
-        return stringArr;
+        // string stringArr = String.Empty;
+        // for (int i = 0; i < arr.Length; i++)
+        // {
+        //     // Console.Write($"{arr[i]} ");
+        //     stringArr += $"{arr[i]} ";
+        // }
+        // return stringArr;
+        return String.Join(" ", arr);
     }
     
     /// <summary>
