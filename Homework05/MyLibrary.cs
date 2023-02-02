@@ -40,4 +40,16 @@
         }
         return count;
     }
+
+    /// <summary>
+    /// Подсчет суммы элементов массива, стоящих на нечетных позициях
+    /// </summary>
+    /// <param name="arr">Массив натуральных чисел</param>
+    /// <returns>Сумма элементов массива, стоящих на нечетных позициях</returns>
+    public static int CountOddSumm(int[] arr)
+    {
+        int oddSumm = 0;
+        for (int i = 1; i < arr.Length; i+=2) oddSumm += arr[i];
+        return oddSumm;
+    }
 }

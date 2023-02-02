@@ -18,7 +18,7 @@ public static class Homework04
     /// </summary>
     public static void Task36()
     {
-        
+        Console.WriteLine($"Сумма элементов на нечетных позициях составляет: {CountOddSumm(GenerateRandomArray(GetNumber()))}");
     }
 
     /// <summary>
