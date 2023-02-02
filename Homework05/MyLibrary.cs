@@ -52,4 +52,20 @@
         for (int i = 1; i < arr.Length; i+=2) oddSumm += arr[i];
         return oddSumm;
     }
+    /// <summary>
+    /// Поиск разности экстремумов массива
+    /// </summary>
+    /// <param name="arr">Массив натуральных чисел</param>
+    /// <returns>Разность экстемумов массива</returns>
+    public static int FindMaxMinDifference(int[] arr)
+    {
+        int min = arr[0];
+        int max = arr[0];
+         for (int i = 1; i <= arr.Length; i++)
+         {
+            if (arr[i] < min) min = arr[i];
+            if (arr[i] > max) max = arr[i];
+         }
+         return (max - min);  
+    }
 }

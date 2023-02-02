@@ -26,7 +26,7 @@ public static class Homework04
     /// </summary>
     public static void Task38()
     {
-        
+        Console.WriteLine($"Разность экстремумов массива равна: {FindMaxMinDifference(GenerateRandomArray(GetNumber()))}");
     }
 }
 
