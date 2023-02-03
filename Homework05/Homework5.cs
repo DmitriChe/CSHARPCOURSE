@@ -30,3 +30,21 @@ public static class Homework04
     }
 }
 
+public static class Seminar06
+{
+    /// <summary>
+    /// Метод составления частотного словаря содержимого массива
+    /// </summary>
+    public static void Task01()
+    {
+        // Считывание числа пользователя - размер массива
+        // Создание массива
+        // Заполнение массива
+        // - случайно
+        // - с клавиатуры пользователем
+        // Печать результата
+        // Составление словаря
+        PrintFrequencyArray(BuildFrequencyArray(MakeArray(GetNumber())));
+    }
+}
+

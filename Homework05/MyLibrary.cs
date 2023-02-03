@@ -68,4 +68,98 @@
          }
          return (max - min);
     }
+
+    /// <summary>
+    /// Заполнения массива ручным вводом элементов
+    /// </summary>
+    /// <param name="size">Размер массива</param>
+    /// <returns>Заполненный вручную массив</returns>
+    public static int[] GenerateManualArray(int size)
+    {
+        int[] arr = new int[size];
+        for (int i = 0; i < arr.Length; i++)
+        {
+            Console.Write($"Введите {i}-й элмент массива: ");
+            arr[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        Console.WriteLine($"[{String.Join(" ", arr)}]");
+        return arr;
+    }
+
+    /// <summary>
+    /// Выбор типа заполнения массива и его генерация
+    /// </summary>
+    /// <param name="size">Размер массива</param>
+    /// <returns>Сгенерированый массив</returns>
+    public static int[] MakeArray(int size)
+    {
+        Console.WriteLine("Выберите вариант заполнения массива:\n1 - вручную;\n2 - автоматически");
+        string answer = Convert.ToString(Console.ReadLine());
+        if (answer == "1") return GenerateManualArray(size);
+        else return GenerateRandomArray(size);
+    }
+
+    /// <summary>
+    /// Ищет максимальное значение в массиве
+    /// </summary>
+    /// <param name="arr">Входящий массив натуральных чисел</param>
+    /// <returns>Максимальное значение в массиве</returns>
+    public static int FindArrMaxValue(int[] arr)
+    {
+        int max = arr[0];
+        for (int i = 1; i < arr.Length; i++) if (arr[i] > max) max = arr[i];
+        return max;
+    }
+
+    /// <summary>
+    /// Создает частотный словарь значений входящего массива на базе нового массива, где индекс = значению элементов входящего массива, а значение по этому индексу - числу таких значений во входящем массиве.
+    /// </summary>
+    /// <param name="arr">Входящий массив</param>
+    /// <returns>Массив с частотой элемента, где индекс элемента массива это сам исходны элемент, а его частота - содержимое ячеки</returns>
+    public static int[] BuildFrequencyArray(int[] arr)
+    {
+        int[] freqArray = new int[FindArrMaxValue(arr) + 1];
+        for (int i = 0; i < arr.Length; i++)
+        {
+            freqArray[arr[i]]++;
+        }
+        return freqArray;
+    }
+
+    /// <summary>
+    /// Вывод на экран содержимого частотного словаря
+    /// </summary>
+    /// <param name="arr">Частотный словарь в виде массива</param>
+    public static void PrintFrequencyArray(int[] arr)
+    {
+        for (int i = 0; i < arr.Length; i++)
+        {
+            if (arr[i] > 0)
+            {
+                Console.WriteLine($"{i} --> {arr[i]} шт.");
+            }
+        }
+    }
+
+
+//     public static int[,] BuildFrequencyArray(int[] arr)
+//     {
+//         int countUniqueValues = arr.Length;
+//         repeated = false;
+//         int countRepeats = 0;
+
+//         for (int i = 0; i < arr.Length; i++)
+//         {
+//             for (int j = 0; j < i; j++) // проверка половины массива до текущего элемента
+//             {
+//                 if (arr[j] == arr[i]) countUniqueValues -= 1;
+//             }
+//             for (int j = i + 1; j < arr.Length; j++)
+//             {
+//                 if (arr[j] == arr[i]) countUniqueValues -= 1;
+//             }
+
+//         }
+//         repeated = false;
+//     }
 }
