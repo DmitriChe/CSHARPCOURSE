@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// Tasks.Task01();
+// Tasks.Task02();
+// Tasks.RecursivePictureFill();
+// Tasks.TaskFactorial();
+// Tasks.TaskFibonacci();
+// Tasks.TaskStringOfNumbers();
+// Tasks.TaskSummOfNumbers();
+// Tasks.TaskPower();
+Tasks.TestWordsGenerator();
+
+
